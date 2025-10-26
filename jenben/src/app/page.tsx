@@ -12,12 +12,12 @@ export default function Home() {
       lineHeight="1.4"
     >
       {/* Main Content */}
-      <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px' }}>
+      <div style={{ maxWidth: '880px', margin: '0 auto', padding: '60px' }}>
         <Stack gap={10}>
           {/* Header */}
           <Box maxW="760px">
-            <Text style={{ color: '#666', fontSize: '13px', marginBottom: '8px' }}>// hello </Text>
-            <Text style={{ fontSize: '36px', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
+            <Text style={{ color: '#666', fontSize: '15px', marginBottom: '8px' }}>// hello </Text>
+            <Text style={{ fontSize: '42px', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
               i'm studying CS and AI at MIT.
               previously worked at
               Decart, MIT CSAIL, and 8200.
@@ -27,36 +27,26 @@ export default function Home() {
 
           {/* About Section */}
           <div>
-            <Text style={{ fontSize: '15px', color: '#666', lineHeight: '1.6' }}>
-              right now i'm interested in LLMs alignment.
+            <Text style={{ fontSize: '18px', color: '#666', lineHeight: '1.6' }}>
+              right now i'm interested in LLMs alignment and agents orchestration.
               i'm a dive master and a photographer.
             </Text>
           </div>
           {/* Navigation */}
           <div>
-            <Stack direction="row" spacing={2} style={{ color: '#666' }}>
-              <Link href="/projects" style={{ color: '#666', textDecoration: 'underline' }}>projects</Link>
+            <Stack direction="row" style={{ color: '#666' }}>
+              <Link href="/about" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>about</Link>
               <Text> / </Text>
-              <Link href="/solo" style={{ color: '#666', textDecoration: 'underline' }}>solo</Link>
+              <Link href="/projects" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>projects</Link>
               <Text> / </Text>
-              <Link href="/about" style={{ color: '#666', textDecoration: 'underline' }}>about</Link>
-            </Stack>
-          </div>
-          {/* Footer */}
-          <div style={{
-            borderTop: '1px solid #e5e5e5',
-            paddingTop: '40px',
-            marginTop: '60px',
-            display: 'flex',
-            justifyContent: 'space-between',
-            fontSize: '12px',
-            color: '#666'
-          }}>
-            <Text>© 2024</Text>
-            <Stack direction="row" spacing={4} style={{ color: '#666' }}>
-              <Link href="https://github.com" style={{ color: '#666', textDecoration: 'none' }}>github</Link>
-              <Link href="https://linkedin.com" style={{ color: '#666', textDecoration: 'none' }}>linkedin</Link>
-              <Link href="mailto:" style={{ color: '#666', textDecoration: 'none' }}>email</Link>
+              <Link href="/solo" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>solo</Link>
+              <Text> / </Text>
+              <Link href="https://github.com/jenbenarye" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>github</Link>
+              <Text> / </Text>
+              <Link href="https://linkedin.com/in/jen-ben-arye" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>linkedin</Link>
+              <Text> / </Text>
+              <Link href="mailto:jen_ben@mit.edu" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>email</Link>
+
             </Stack>
           </div>
         </Stack>
