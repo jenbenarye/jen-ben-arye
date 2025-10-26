@@ -3,17 +3,35 @@ import { Text, Stack, Link, Box } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Box
-      padding="0"
-      backgroundColor="#f8f8f8"
-      color="#333"
+      padding={{ base: "48px 32px", md: "96px 80px" }}
+      backgroundColor="#f2f2f2"
+      color="#4a4a4a"
       minHeight="100vh"
-      fontFamily="var(--font-mono), 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Courier New', monospace"
+      fontFamily='"JetBrains Mono", monospace'
       fontSize="14px"
-      lineHeight="1.8"
+      lineHeight="1.4"
     >
       {/* Main Content */}
       <div style={{ maxWidth: '800px', margin: '0 auto', padding: '60px' }}>
         <Stack gap={10}>
+          {/* Header */}
+          <Box maxW="760px">
+            <Text style={{ color: '#666', fontSize: '13px', marginBottom: '8px' }}>// hello </Text>
+            <Text style={{ fontSize: '36px', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
+              i'm studying CS and AI at MIT.
+              previously worked at
+              Decart, MIT CSAIL, and 8200.
+              i co-founded Prod Israel.
+            </Text>
+          </Box>
+
+          {/* About Section */}
+          <div>
+            <Text style={{ fontSize: '15px', color: '#666', lineHeight: '1.6' }}>
+              right now i'm interested in LLMs alignment.
+              i'm a dive master and a photographer.
+            </Text>
+          </div>
           {/* Navigation */}
           <div>
             <Stack direction="row" spacing={2} style={{ color: '#666' }}>
@@ -24,28 +42,6 @@ export default function Home() {
               <Link href="/about" style={{ color: '#666', textDecoration: 'underline' }}>about</Link>
             </Stack>
           </div>
-
-          {/* Header */}
-          <div>
-            <Text style={{ color: '#666', fontSize: '13px', marginBottom: '8px' }}>// hello world</Text>
-            <Text style={{ fontSize: '28px', fontWeight: 'bold', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
-              i'm jen ben arye,
-              a junior at MIT studying
-              computer science and AI.
-              previously worked at
-              Decart, MIT CSAIL, and 8200.
-              i co-founded Prod Israel.
-            </Text>
-          </div>
-
-          {/* About Section */}
-          <div>
-            <Text style={{ fontSize: '13px', color: '#666', lineHeight: '1.6' }}>
-              right now i'm interested in building systems,
-              computer vision, and diving in new places.
-            </Text>
-          </div>
-
           {/* Footer */}
           <div style={{
             borderTop: '1px solid #e5e5e5',
