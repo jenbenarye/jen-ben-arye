@@ -46,13 +46,25 @@ export default function ProjectsPage() {
 
         <VStack align="stretch" gap={14} mt={16}>
           {projects.map(({ title, year, blurb, tags }) => (
-            <Flex key={title} align="stretch" gap={12}>
+            <Flex
+                key={title}
+                align="stretch"
+                gap={12}
+                role="group"
+                _hover={{
+                    "& .project-bar": {
+                        backgroundColor: "#000",
+                    }
+                }}
+            >
               <Box
-                w="4px"
+                className="project-bar"
+                w="2px"
                 bg="rgba(0,0,0,0.12)"
                 borderRadius="full"
                 mt={2}
                 mb={2}
+                transition="background-color 0.2s ease"
               />
               <Box flex="1">
                 <Flex justify="space-between" align="flex-start">
