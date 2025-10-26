@@ -35,8 +35,6 @@ export default function Home() {
           {/* Navigation */}
           <div>
             <Stack direction="row" style={{ color: '#666' }}>
-              <Link href="/about" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>about</Link>
-              <Text> / </Text>
               <Link href="/projects" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>projects</Link>
               <Text> / </Text>
               <Link href="/solo" fontSize='15px' color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>solo</Link>
