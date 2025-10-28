@@ -211,3 +211,5 @@ __marimo__/
 node_modules/
 jenben/node_modules/
 jenben/.next
+
+.DS_Store
