@@ -3,28 +3,22 @@ import { Box, Flex, Text, VStack, HStack, Tag } from "@chakra-ui/react";
 
 const projects = [
   {
-    title: "neural-style-transfer",
+    title: "autoregressive-diffusion",
+    year: "2025",
+    blurb: "Worked on autoregressive diffusion for interactive video generation @ Decart.",
+    tags: ["pytorch", "cv", "diffusion"],
+  },
+  {
+    title: "multilingual-rlhf",
     year: "2024",
-    blurb: "applied artistic styles to images using cnns. pytorch + real-time optimization.",
-    tags: ["pytorch", "cv", "cnns"],
+    blurb: "Automated RLHF pipelines to align multilingual LLMs w/ live human feedback @ MIT CSAIL. Advised by Prof. Jacob Andreas and Prof. Leshem Choshen.",
+    tags: ["rlhf", "llm", "nlp"],
   },
   {
-    title: "sentiment-analysis",
-    year: "2024",
-    blurb: "trained on 1m+ tweets. 94% accuracy with transformers.",
-    tags: ["nlp", "transformers"],
-  },
-  {
-    title: "autonomous-nav",
-    year: "2023",
-    blurb: "rl agent for robot navigation. ppo in simulated environments.",
-    tags: ["rl", "robotics"],
-  },
-  {
-    title: "predictive-maintenance",
-    year: "2023",
-    blurb: "anomaly detection for equipment failures. reduced downtime 35%.",
-    tags: ["time-series", "ml"],
+    title: "adversarial-feedback",
+    year: "2025",
+    blurb: "Studying how adversarial preference signals shift model alignment + behavior; stress-testing LLMs under adversarial feedback.",
+    tags: ["alignment", "eval"],
   },
 ];
 
@@ -41,7 +35,7 @@ export default function ProjectsPage() {
       <Box maxW="760px" margin="0 auto">
         <Text fontSize="15px" color="#7c7c7c">// projects</Text>
         <Text mt={2} fontSize="20px" color="#6a6a6a">
-          things i've built
+          Things I've built
         </Text>
 
         <VStack align="stretch" gap={14} mt={16}>

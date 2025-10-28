@@ -99,13 +99,12 @@ const destinations: Destination[] = [
   {
     country: "Colombia",
     year: "2022",
-    blurb: "anomaly detection for equipment failures. reduced downtime 35%.",
+    blurb: "Five-day mission to a remote village. Cave falls 250m. I was #38 to go down.",
     images: [
         "/travel/colombia/1.jpg",
         "/travel/colombia/2.jpg",
         "/travel/colombia/3.jpg",
         "/travel/colombia/4.jpg",
-        "/travel/colombia/10.jpg",
         "/travel/colombia/6.jpg",
     ],
   },
@@ -143,7 +142,17 @@ const destinations: Destination[] = [
     country: "Thailand",
     year: "2025",
     blurb: "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
-    images: ["/travel/argentina/1.png", "/travel/argentina/2.png", ],
+    images: [
+        "/travel/thailand/1.JPG",
+        "/travel/thailand/2.JPG",
+        "/travel/thailand/3.JPG",
+        "/travel/thailand/4.JPG",
+        "/travel/thailand/5.JPG",
+        "/travel/thailand/6.JPG",
+        "/travel/thailand/7.JPG",
+        "/travel/thailand/8.JPG",
+        "/travel/thailand/9.JPG",
+        ],
   },
   {
     country: "Hong Kong",
