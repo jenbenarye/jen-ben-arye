@@ -18,18 +18,17 @@ export default function Home() {
           <Box maxW="760px">
             <Text style={{ color: '#666', fontSize: '15px', marginBottom: '8px' }}>// hello </Text>
             <Text style={{ fontSize: '42px', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
-              i'm studying CS and AI at MIT.
-              previously worked at
-              Decart, MIT CSAIL, and 8200.
-              i co-founded Prod Israel.
+              I study CS and AI at MIT.
+              Previously worked at Decart, MIT CSAIL, and IDF's 8200.
+              I co-founded Prod Israel.
             </Text>
           </Box>
 
           {/* About Section */}
           <div>
-            <Text style={{ fontSize: '18px', color: '#666', lineHeight: '1.6' }}>
-              right now i'm interested in LLMs alignment and agents orchestration.
-              i'm a dive master and a photographer.
+            <Text style={{ fontSize: '21px', color: '#666', lineHeight: '1.6' }}>
+              Right now I'm interested in LLMs alignment and agents orchestration.
+              I'm a dive master and a photographer.
             </Text>
           </div>
           {/* Navigation */}
