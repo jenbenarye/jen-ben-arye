@@ -76,6 +76,14 @@ const destinations: Destination[] = [
     year: "2022",
     blurb: "Llamas, coconut and fog.",
     images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700368/IMG_5665_pabjzo.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700367/IMG_5666_zympgq.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700365/IMG_5668_gn3g64.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700366/IMG_5667_hxtsie.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700363/IMG_5670_miyf02.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700364/IMG_5669_qphhhl.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700362/IMG_5672_buhxmw.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700363/IMG_5671_thevmo.jpg",
     ],
   },
   {
@@ -83,14 +91,21 @@ const destinations: Destination[] = [
     year: "2022",
     blurb: "Spent week on a diving boat scuba diving with sharks. Five dives a day, felt like bootcamp.",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-    ],  },
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700033/IMG_5675_y6duta.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700032/IMG_5686_tjvtzk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5674_wwabkv.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5673_nrumxe.jpg",
+    ],
+  },
   {
     country: "Colombia",
     year: "2022",
     blurb: "Five-day mission to a remote village. Cave falls 250m. I was #38 to go down.",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
+      "",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700073/IMG_5678_yf2ytw.jpg",
     ],
   },
   {
@@ -99,7 +114,6 @@ const destinations: Destination[] = [
     blurb: "1.5 months. Oaxaca - markets, food, colors, smells, chaos. Surfed in Chacahua, slept in a hammock, chickens everywhere.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-
     ],
   },
   {
@@ -116,8 +130,13 @@ const destinations: Destination[] = [
     year: "2025",
     blurb: "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5690_rr2eeu.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5689_kytolu.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699962/IMG_5687_ka4gtj.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5688_wpiayh.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5691_vqtpcg.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5692_sgnodh.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5693_km2hf2.jpg",
         ],
   },
   {
