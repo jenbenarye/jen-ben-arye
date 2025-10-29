@@ -102,7 +102,6 @@ const destinations: Destination[] = [
     year: "2022",
     blurb: "Five-day mission to a remote village. Cave falls 250m. I was #38 to go down.",
     images: [
-      "",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700073/IMG_5678_yf2ytw.jpg",
@@ -113,7 +112,18 @@ const destinations: Destination[] = [
     year: "2025",
     blurb: "1.5 months. Oaxaca - markets, food, colors, smells, chaos. Surfed in Chacahua, slept in a hammock, chickens everywhere.",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706152/4E32B9E6-5B1E-4938-83FE-4E9908190321_tlad54.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706152/35D2FD19-FF93-4A23-BCD9-8257864ACFDA_q5k99t.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706151/64E77E91-1171-4087-B9A9-AD19A9EA4F93_vlzehk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706151/DEF8A65A-8B0F-4873-9E74-648061DCADEA_htcyf2.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706155/5BF64CA6-6093-4A25-A829-84CACBED9343_ippqwt.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706148/874C03FB-A152-4047-8F9B-9F3105A0A340_cwgxqc.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/F3F21A9C-D2CB-4416-B4A9-BF94F862A630_tqpsok.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/25355E13-5A4B-4A71-A01B-8616501D91E6_z8yutk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/5C59DE6A-4629-493E-8DDF-51296FBC6455_r3jjma.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/BE399BB8-C475-452F-8108-A5BD365A5C66_j81pdy.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706151/7C6CF072-299E-40FB-B0DF-6E8DF4EA993C_fe8ude.jpg",
+
     ],
   },
   {
@@ -121,8 +131,11 @@ const destinations: Destination[] = [
     year: "2024",
     blurb: "Hiked up Volcán Acatenango to watch Volcán de Fuego erupt. My camera broke (and so did my heart).",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/0573D390-F5EF-4BD9-94CF-3E00B273D8C5_upnkdk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/CA0CA14C-12C4-4241-805B-67D96D156D5A_ubzvup.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/2CCBD668-06FB-46F8-A8D6-79C29878BB0B_q4fkpb.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706466/4C2F1ED0-B1AA-4089-92AC-E29D2469040F_hxr1kz.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706466/6A675203-40C6-46FC-B486-AB7578EEB121_yk2uhg.jpg",
     ],
   },
   {
@@ -143,13 +156,23 @@ const destinations: Destination[] = [
     country: "Hong Kong",
     year: "2024",
     blurb: "A detour gone right: from a failed Vietnam plan to noodles and city buzz in Hong Kong.",
-    images: [],
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706582/B046A6DE-02D4-4272-9D74-3D1073A2B080_dqgizc.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706583/C3F3DC98-2DDC-4447-9F75-E4BCB6751B51_pjbxhz.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706582/E2E7DDCB-9A24-4A45-AE04-55F0993F86FA_xgztrp.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706583/7447104B-E5AB-4C3B-B1A5-C1263397C426_qzpagn.jpg",
+    ],
   },
   {
     country: "Nicaragua",
     year: "2025",
     blurb: "Volcano boarding down Cerro Negro (still have ash in my teeth).",
-    images: [],
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/AF2658FD-E7BA-4B3F-9E9B-E5F022CC8FC4_rfw6zk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/A35F3083-F9BD-4F0B-8B89-71F3D9DE7C75_uxpxib.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/CD153FBC-D4E0-4764-ADE9-7778FEB2F514_j5hika.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/BA9427C8-7784-4236-B76A-8843A20BD939_d21wag.jpg",
+    ],
   },
 ];
 
