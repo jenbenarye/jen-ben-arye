@@ -5,8 +5,8 @@ const projects = [
   {
     title: "autoregressive-diffusion",
     year: "2025",
-    blurb: "Worked on autoregressive diffusion for interactive video generation @ Decart.",
-    tags: ["pytorch", "cv", "diffusion"],
+    blurb: "Worked on autoregressive diffusion for video generation @ Decart.",
+    tags: ["cv", "diffusion"],
   },
   {
     title: "multilingual-rlhf",
@@ -18,7 +18,7 @@ const projects = [
     title: "adversarial-feedback",
     year: "2025",
     blurb: "Studying how adversarial preference signals shift model alignment + behavior; stress-testing LLMs under adversarial feedback.",
-    tags: ["alignment", "eval"],
+    tags: ["alignment", "eval", "rlhf"],
   },
 ];
 

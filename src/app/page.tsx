@@ -20,7 +20,7 @@ export default function Home() {
             <Text style={{ fontSize: '42px', lineHeight: '1.3', color: '#333', marginTop: '20px' }}>
               I study CS and AI at MIT.
               Previously worked at Decart, MIT CSAIL, and IDF's 8200.
-              I co-founded Prod Israel.
+              Co-founded Prod Israel.
             </Text>
           </Box>
 

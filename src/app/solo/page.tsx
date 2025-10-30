@@ -17,7 +17,7 @@ const destinations: Destination[] = [
   {
     country: "Argentina",
     year: "2022",
-    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, 8 months ahead. I was terrified.",
+    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
     images: [
         "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
         "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
@@ -50,7 +50,7 @@ const destinations: Destination[] = [
   {
     country: "Bolivia",
     year: "2022",
-    blurb: "Looks like God took hard drugs before painting the world. White salt flats, a blood-red lake full of pink flamingos, and a volcano behind. A 5,350 m climb. A week in the Amazon Jungle. 36 hr bus rides w/o signal.",
+    blurb: "White salt flats, a blood-red lake full of pink flamingos, and a volcano behind. A 5,350 m climb. A week in the Amazon Jungle. 36 hr bus rides w/o signal.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700506/IMG_5633_kgrztc.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700497/IMG_5647_wndqv0.jpg",
@@ -89,7 +89,7 @@ const destinations: Destination[] = [
   {
     country: "Galapagos Islands",
     year: "2022",
-    blurb: "Spent week on a diving boat scuba diving with sharks. Five dives a day, felt like bootcamp.",
+    blurb: "Spent a week on a dive boat SCUBA diving with sharks. Five dives per day.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700033/IMG_5675_y6duta.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700032/IMG_5686_tjvtzk.jpg",
@@ -100,7 +100,7 @@ const destinations: Destination[] = [
   {
     country: "Colombia",
     year: "2022",
-    blurb: "Five-day mission to a remote village. Cave falls 250m. I was #38 to go down.",
+    blurb: "Five-day mission to a remote village. Rappelled 250m into a cave. I was the 38th person ever to go down.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
