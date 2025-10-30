@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     title: "Jen Ben Arye",
     description: "My corner of the web",
     siteName: "Jen Ben Arye",
-    images: [{ url: "/site-icon-1000.png"}]
+    images: [{ url: "/site-icon-1000.png", width: 1000, height: 1000,}]
   },
   twitter: {
     card: "summary_large_image",
