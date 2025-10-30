@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     title: "Jen Ben Arye",
     description: "My corner of the web",
     images: "/site-icon-1000.png",
-    icon
   }
 };
 
