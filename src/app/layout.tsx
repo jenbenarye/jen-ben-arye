@@ -15,11 +15,10 @@ export const metadata: Metadata = {
   description: "My corner of the web.",
   icons: {
     icon: [
-      { url: "/site-icon.png", type: "image/png" }
-    ]
-  }
+      { url: "/site-icon.png", type: "image/png", sizes: "250x250" },
+    ],
+  },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
