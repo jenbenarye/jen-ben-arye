@@ -13,6 +13,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Jen Ben Arye",
   description: "My corner of the web",
+  metadataBase: new URL("https://www.jenbenarye.com"),
   icons: {
     icon: { url: "/site-icon.png", type: "image/png", sizes: "250x250" },
   },
@@ -28,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jen Ben Arye",
     description: "My corner of the web",
-    images: "https://www.jenbenarye.com/site-icon-1000.png",
+    images: "/site-icon-1000.png",
   }
 };
 
