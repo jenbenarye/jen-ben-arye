@@ -15,7 +15,10 @@ export const metadata: Metadata = {
   description: "My corner of the web",
   metadataBase: new URL("https://www.jenbenarye.com"),
   icons: {
-    icon: { url: "/site-icon.png", type: "image/png", sizes: "250x250" },
+    icon: [
+      { url: "/site-icon.png", type: "image/png", sizes: "250x250" },
+      { url: "/site-icon-1000.png", type: "image/png", sizes: "1000x1000" },
+    ],
   },
   openGraph: {
     type: "website",
@@ -30,6 +33,7 @@ export const metadata: Metadata = {
     title: "Jen Ben Arye",
     description: "My corner of the web",
     images: "/site-icon-1000.png",
+    icon
   }
 };
 
