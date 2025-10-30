@@ -1,9 +1,11 @@
 // jenben/src/app/solo/page.tsx
 "use client";
-import { Box, Flex, Text, SimpleGrid, IconButton} from "@chakra-ui/react";
+import { Box, Flex, Text, SimpleGrid, IconButton, Button} from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import {RiArrowLeftLine} from "react-icons/ri"
 
 import Image from "next/image";
+import NextLink from "next/link";
 import { useState } from "react";
 
 type Destination = {
@@ -217,6 +219,13 @@ export default function SoloPage() {
       fontFamily='"JetBrains Mono", monospace'
       color="#3e3e3e"
     >
+      <Box position="fixed" top="80px" left="120px">
+        <Button colorPalette='white' variant="surface" asChild>
+          <a href="/">Home <RiArrowLeftLine/></a>
+        </Button>
+      </Box>
+
+
       <Box maxW="760px" margin="0 auto">
         <Text fontSize="15px" color="#7c7c7c">// solo</Text>
         <Text mt={2} fontSize="20px" color="#6a6a6a">
