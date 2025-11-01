@@ -16,6 +16,17 @@ type Destination = {
 
 const destinations: Destination[] = [
   {
+    country: "Argentina",
+    year: "2022",
+    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
+    images: [
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg"
+     ],
+  },
+  {
     country: "Chile",
     year: "2022",
     blurb: "Hitchhiked the Carretera Austral. Skydived over a live volcano in Pucón. Trekked Torres del Paine.",
@@ -106,17 +117,6 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700362/IMG_5672_buhxmw.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700363/IMG_5671_thevmo.jpg",
     ],
-  },
-  {
-    country: "Argentina",
-    year: "2022",
-    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
-    images: [
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg"
-     ],
   },
   {
     country: "Mexico",
