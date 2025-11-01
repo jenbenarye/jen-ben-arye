@@ -45,7 +45,7 @@ export default function ProjectsPage() {
         </Button>
       </Box>
 
-      <Box maxW="760px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
+      <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
         <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// projects</Text>
         <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a" paddingTop={{ base:'0.5rem', md:'0.5rem' }}>
           Things I've built

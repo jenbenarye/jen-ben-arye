@@ -16,17 +16,6 @@ type Destination = {
 
 const destinations: Destination[] = [
   {
-    country: "Argentina",
-    year: "2022",
-    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
-    images: [
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg"
-     ],
-  },
-  {
     country: "Chile",
     year: "2022",
     blurb: "Hitchhiked the Carretera Austral. Skydived over a live volcano in Pucón. Trekked Torres del Paine.",
@@ -46,6 +35,17 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700589/IMG_5618_b1gi3l.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700602/IMG_5603_epikgq.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700601/IMG_5605_py6km6.jpg",
+    ],
+  },
+  {
+    country: "Nicaragua",
+    year: "2025",
+    blurb: "Volcano boarding down Cerro Negro (still have ash in my teeth).",
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/AF2658FD-E7BA-4B3F-9E9B-E5F022CC8FC4_rfw6zk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/A35F3083-F9BD-4F0B-8B89-71F3D9DE7C75_uxpxib.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/CD153FBC-D4E0-4764-ADE9-7778FEB2F514_j5hika.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/BA9427C8-7784-4236-B76A-8843A20BD939_d21wag.jpg",
     ],
   },
   {
@@ -69,6 +69,30 @@ const destinations: Destination[] = [
     ],
   },
   {
+    country: "Thailand",
+    year: "2025",
+    blurb: "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5690_rr2eeu.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5689_kytolu.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699962/IMG_5687_ka4gtj.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5688_wpiayh.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5691_vqtpcg.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5692_sgnodh.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5693_km2hf2.jpg",
+        ],
+  },
+  {
+    country: "Colombia",
+    year: "2022",
+    blurb: "Five-day mission to a remote village. Rappelled 250m into a cave. I was the 38th person ever to go down.",
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700073/IMG_5678_yf2ytw.jpg",
+    ],
+  },
+  {
     country: "Ecuador",
     year: "2022",
     blurb: "Llamas, coconut and fog.",
@@ -84,25 +108,15 @@ const destinations: Destination[] = [
     ],
   },
   {
-    country: "Galapagos Islands",
+    country: "Argentina",
     year: "2022",
-    blurb: "Spent a week on a dive boat SCUBA diving with sharks. Five dives per day.",
+    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
     images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700033/IMG_5675_y6duta.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700032/IMG_5686_tjvtzk.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5674_wwabkv.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5673_nrumxe.jpg",
-    ],
-  },
-  {
-    country: "Colombia",
-    year: "2022",
-    blurb: "Five-day mission to a remote village. Rappelled 250m into a cave. I was the 38th person ever to go down.",
-    images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700073/IMG_5678_yf2ytw.jpg",
-    ],
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
+        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg"
+     ],
   },
   {
     country: "Mexico",
@@ -124,6 +138,17 @@ const destinations: Destination[] = [
     ],
   },
   {
+    country: "Galapagos Islands",
+    year: "2022",
+    blurb: "Spent a week on a dive boat SCUBA diving with sharks. Five dives per day.",
+    images: [
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700033/IMG_5675_y6duta.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700032/IMG_5686_tjvtzk.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5674_wwabkv.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700034/IMG_5673_nrumxe.jpg",
+    ],
+  },
+  {
     country: "Guatemala",
     year: "2024",
     blurb: "Hiked up Volcán Acatenango to watch Volcán de Fuego erupt. My camera broke (and so did my heart).",
@@ -136,20 +161,6 @@ const destinations: Destination[] = [
     ],
   },
   {
-    country: "Thailand",
-    year: "2025",
-    blurb: "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
-    images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5690_rr2eeu.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5689_kytolu.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699962/IMG_5687_ka4gtj.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5688_wpiayh.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5691_vqtpcg.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5692_sgnodh.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5693_km2hf2.jpg",
-        ],
-  },
-  {
     country: "Hong Kong",
     year: "2024",
     blurb: "A detour gone right: from a failed Vietnam plan to noodles and city buzz in Hong Kong.",
@@ -160,17 +171,7 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706583/7447104B-E5AB-4C3B-B1A5-C1263397C426_qzpagn.jpg",
     ],
   },
-  {
-    country: "Nicaragua",
-    year: "2025",
-    blurb: "Volcano boarding down Cerro Negro (still have ash in my teeth).",
-    images: [
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/AF2658FD-E7BA-4B3F-9E9B-E5F022CC8FC4_rfw6zk.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/A35F3083-F9BD-4F0B-8B89-71F3D9DE7C75_uxpxib.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/CD153FBC-D4E0-4764-ADE9-7778FEB2F514_j5hika.jpg",
-      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/BA9427C8-7784-4236-B76A-8843A20BD939_d21wag.jpg",
-    ],
-  },
+
 ];
 
 
@@ -183,7 +184,7 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
 
   return (
     <Box bg="#fff" borderRadius="1rem" border="0.1rem solid #e5e5e5" overflow="hidden" transition="box-shadow 0.2s" _hover={{ boxShadow: "lg" }}>
-      <Box position="relative" height="15rem">
+      <Box position="relative" height={{base:"15rem", md:"18rem"}}>
         <Image src={images[index]} alt={`${country} travel photo ${index + 1}`} fill style={{ objectFit: "cover" }} />
         {total > 1 && (
           <>
@@ -197,7 +198,7 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
           <Text fontSize="22px" color="#2d2d2d">{country}</Text>
           <Text fontSize="15px" color="#7c7c7c">{year}</Text>
         </Flex>
-        <Text mt={3} fontSize="16px" color="#585858" lineHeight="1.6">{blurb}</Text>
+        <Text mt={3} fontSize={{base:"1rem", md:"1rem"}} color="#585858" lineHeight="1.6">{blurb}</Text>
       </Box>
     </Box>
   );
@@ -219,7 +220,7 @@ export default function SoloPage() {
         </Button>
       </Box>
 
-      <Box maxW="760px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
+      <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
         <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// solo</Text>
         <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a">
         I’ve spent more than a year wandering on my own.
