@@ -221,7 +221,7 @@ export default function SoloPage() {
       </Box>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
-        <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// solo</Text>
+        <Text fontSize={{ base:"1rem", md:"4rem" }} color="#7c7c7c">// solo</Text>
         <Text mt={2} fontSize={{ base:'1rem', md:'1.1rem' }} color="#6a6a6a">
         I’ve spent more than a year wandering on my own.
         It was the sharpest learning curve I’ve ever taken.
