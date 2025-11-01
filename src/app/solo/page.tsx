@@ -1,11 +1,10 @@
 // jenben/src/app/solo/page.tsx
 "use client";
 import { Box, Flex, Text, SimpleGrid, IconButton, Button} from "@chakra-ui/react";
-import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
+import { KeyboardArrowLeftRounded, KeyboardArrowRightRounded } from "@mui/icons-material";
 import {RiArrowLeftLine} from "react-icons/ri"
 
 import Image from "next/image";
-import NextLink from "next/link";
 import { useState } from "react";
 
 type Destination = {
@@ -67,10 +66,6 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700505/IMG_5634_t18v3l.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700498/IMG_5645_okdvd0.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700501/IMG_5642_q6lkjd.jpg",
-
-
-
-
     ],
   },
   {
@@ -187,13 +182,13 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
   const prev = () => setIndex((i) => (i - 1 + total) % total);
 
   return (
-    <Box bg="#fff" borderRadius="16px" border="1px solid #e5e5e5" overflow="hidden" transition="box-shadow 0.2s" _hover={{ boxShadow: "lg" }}>
-      <Box position="relative" height="240px">
+    <Box bg="#fff" borderRadius="1rem" border="0.1rem solid #e5e5e5" overflow="hidden" transition="box-shadow 0.2s" _hover={{ boxShadow: "lg" }}>
+      <Box position="relative" height="15rem">
         <Image src={images[index]} alt={`${country} travel photo ${index + 1}`} fill style={{ objectFit: "cover" }} />
         {total > 1 && (
           <>
-            <IconButton aria-label="previous photo" position="absolute" left="8px" top="50%" transform="translateY(-50%)" onClick={prev} variant="solid" size="sm"><ChevronLeftIcon /></IconButton>
-            <IconButton aria-label="next photo" position="absolute" right="8px" top="50%" transform="translateY(-50%)" onClick={next} variant="solid" size="sm"><ChevronRightIcon /></IconButton>
+            <IconButton aria-label="previous photo" position="absolute" left="8px" top="50%" transform="translateY(-50%)" onClick={prev} variant="surface" size="sm"><KeyboardArrowLeftRounded /></IconButton>
+            <IconButton aria-label="next photo" position="absolute" right="8px" top="50%" transform="translateY(-50%)" onClick={next} variant="surface" size="sm"><KeyboardArrowRightRounded /></IconButton>
           </>
         )}
       </Box>
@@ -217,24 +212,21 @@ export default function SoloPage() {
       px={{ base: 8, md: 20 }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
-      color="#3e3e3e"
     >
-      <Box position="fixed" top="80px" left="120px">
+      <Box position="fixed" top={{base:"3rem", md:"5rem"}} left={{base:"2rem", md:"8rem"}}>
         <Button colorPalette='white' variant="surface" asChild>
           <a href="/">Home <RiArrowLeftLine/></a>
         </Button>
       </Box>
 
-
-      <Box maxW="760px" margin="0 auto">
-        <Text fontSize="15px" color="#7c7c7c">// solo</Text>
-        <Text mt={2} fontSize="20px" color="#6a6a6a">
+      <Box maxW="760px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
+        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// solo</Text>
+        <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a">
         I’ve spent more than a year wandering on my own.
         It was the sharpest learning curve I’ve ever taken.
         I spent time living in India, shared a home with three adopted brothers
         from Ethiopia and Russia. I split time beneath the surface as a divemaster
         and behind the lens with my Nikon D7100.
-
         </Text>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={20}>
