@@ -31,7 +31,7 @@ export default function Home() {
             >
               I study CS and AI at MIT.
               Previously worked at Decart, MIT CSAIL, and IDF's 8200.
-              Co-founded Prod Israel.
+
             </Text>
           </Box>
 
@@ -42,7 +42,7 @@ export default function Home() {
             color='#666'
             lineHeight='1.6'
             >
-              Right now I'm interested in LLMs alignment and agents orchestration.
+              Co-founded Prod Israel. Right now I'm interested in LLMs alignment and agents orchestration.
               I'm a dive master and a photographer.
             </Text>
           </div>
