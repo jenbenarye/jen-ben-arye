@@ -214,7 +214,7 @@ export default function SoloPage() {
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
     >
-      <Box position="fixed" top={{base:"3rem", md:"5rem"}} left={{base:"2rem", md:"8rem"}}>
+      <Box position={{base:"set", md:"fixed"}} top={{base:"3rem", md:"5rem"}} left={{base:"2rem", md:"8rem"}}>
         <Button colorPalette='white' variant="surface" asChild>
           <a href="/">Home <RiArrowLeftLine/></a>
         </Button>
