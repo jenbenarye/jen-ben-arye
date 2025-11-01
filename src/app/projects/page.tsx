@@ -22,27 +22,32 @@ const projects = [
     blurb: "Studying how adversarial preference signals shift model alignment + behavior; stress-testing LLMs under adversarial feedback.",
     tags: ["alignment", "eval", "rlhf"],
   },
+  {
+    title: "jenbenarye.com",
+    year: "2025",
+    blurb: "You're here.",
+    tags: ["nextjs", "ui", "react"],
+  },
 ];
 
 export default function ProjectsPage() {
   return (
     <Box
-      bg="#f2f2f2"
+      backgroundColor="#f2f2f2"
       minH="100vh"
       px={{ base: 8, md: 20 }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
-      color="#3e3e3e"
     >
-      <Box position="fixed" top="80px" left="120px">
+      <Box position="fixed" top={{base:"3rem", md:"5rem"}} left={{base:"2rem", md:"8rem"}}>
         <Button colorPalette='white' variant="surface" asChild>
           <a href="/">Home <RiArrowLeftLine/></a>
         </Button>
       </Box>
 
-      <Box maxW="760px" margin="0 auto">
-        <Text fontSize="15px" color="#7c7c7c">// projects</Text>
-        <Text mt={2} fontSize="20px" color="#6a6a6a">
+      <Box maxW="760px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
+        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// projects</Text>
+        <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a" paddingTop={{ base:'0.5rem', md:'0.5rem' }}>
           Things I've built
         </Text>
 
@@ -66,18 +71,19 @@ export default function ProjectsPage() {
                 borderRadius="full"
                 mt={2}
                 mb={2}
+                mr={{base:-4, md:4}}
                 transition="background-color 0.2s ease"
               />
               <Box flex="1">
                 <Flex justify="space-between" align="flex-start">
-                  <Text fontSize="24px" color="#2d2d2d">
+                  <Text fontSize={{ base:"1.5rem", md:"1.8rem" }} color="#2d2d2d">
                     {title}
                   </Text>
-                  <Text fontSize="16px" color="#7c7c7c">
+                  <Text fontSize={{ base:"1rem", md:"1.2rem" }} color="#7c7c7c" display={{ base: 'none', md: 'block' }}>
                     {year}
                   </Text>
                 </Flex>
-                <Text mt={3} fontSize="17px" color="#2d2d2d" lineHeight="1.6">
+                <Text mt={3} fontSize={{ base:"1rem", md:"1.2rem" }} color="#2d2d2d" lineHeight="1.6">
                   {blurb}
                 </Text>
                 <HStack gap={3} mt={4}>
@@ -93,6 +99,7 @@ export default function ProjectsPage() {
                       fontWeight="normal"
                       textTransform="lowercase"
                       letterSpacing="0.05em"
+                      fontSize={{ base:"1rem", md:"1.2rem" }}
                     >
                       <Tag.Label>{tag}</Tag.Label>
                     </Tag.Root>
