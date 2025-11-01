@@ -195,8 +195,8 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
       </Box>
       <Box p={6}>
         <Flex justify="space-between" align="baseline">
-          <Text fontSize="22px" color="#2d2d2d">{country}</Text>
-          <Text fontSize="15px" color="#7c7c7c">{year}</Text>
+          <Text fontSize={{base:"1rem", md:"1.2rem"}} color="#2d2d2d">{country}</Text>
+          <Text fontSize={{base:"1rem", md:"1.1rem"}} color="#7c7c7c">{year}</Text>
         </Flex>
         <Text mt={3} fontSize={{base:"1rem", md:"1rem"}} color="#585858" lineHeight="1.6">{blurb}</Text>
       </Box>
@@ -221,8 +221,8 @@ export default function SoloPage() {
       </Box>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
-        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// solo</Text>
-        <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a">
+        <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// solo</Text>
+        <Text mt={2} fontSize={{ base:'1rem', md:'1.1rem' }} color="#6a6a6a">
         I’ve spent more than a year wandering on my own.
         It was the sharpest learning curve I’ve ever taken.
         I spent time living in India, shared a home with three adopted brothers

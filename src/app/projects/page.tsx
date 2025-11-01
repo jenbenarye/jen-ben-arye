@@ -46,8 +46,8 @@ export default function ProjectsPage() {
       </Box>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"3rem", md:"0rem" }}>
-        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// projects</Text>
-        <Text mt={2} fontSize={{ base:'1rem', md:'1.4rem' }} color="#6a6a6a" paddingTop={{ base:'0.3rem', md:'0.5rem' }}>
+        <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// projects</Text>
+        <Text mt={2} fontSize={{ base:'1rem', md:'1.1rem' }} color="#6a6a6a" paddingTop={{ base:'0.3rem', md:'0.5rem' }}>
           Things I've built
         </Text>
 
@@ -79,11 +79,11 @@ export default function ProjectsPage() {
                   <Text fontSize={{ base:"1.5rem", md:"1.8rem" }} color="#2d2d2d">
                     {title}
                   </Text>
-                  <Text fontSize={{ base:"1rem", md:"1.2rem" }} color="#7c7c7c" display={{ base: 'none', md: 'block' }}>
+                  <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c" display={{ base: 'none', md: 'block' }}>
                     {year}
                   </Text>
                 </Flex>
-                <Text mt={3} fontSize={{ base:"1rem", md:"1.2rem" }} color="#2d2d2d" lineHeight="1.6">
+                <Text mt={3} fontSize={{ base:"1rem", md:"1.1rem" }} color="#2d2d2d" lineHeight="1.6">
                   {blurb}
                 </Text>
                 <HStack gap={3} mt={4}>
