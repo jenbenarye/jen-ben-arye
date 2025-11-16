@@ -188,8 +188,46 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
         <Image src={images[index]} alt={`${country} travel photo ${index + 1}`} fill style={{ objectFit: "cover" }} />
         {total > 1 && (
           <>
-            <IconButton aria-label="previous photo" position="absolute" left="8px" top="50%" transform="translateY(-50%)" onClick={prev} variant="surface" size="sm"><KeyboardArrowLeftRounded /></IconButton>
-            <IconButton aria-label="next photo" position="absolute" right="8px" top="50%" transform="translateY(-50%)" onClick={next} variant="surface" size="sm"><KeyboardArrowRightRounded /></IconButton>
+            <IconButton
+              aria-label="previous photo"
+              position="absolute"
+              left="12px"
+              top="50%"
+              transform="translateY(-50%)"
+              onClick={prev}
+              bg="rgba(0, 0, 0, 0.5)"
+              color="white"
+              borderRadius="50%"
+              size="md"
+              _hover={{
+                bg: "rgba(0, 0, 0, 0.7)",
+                transform: "translateY(-50%) scale(1.1)"
+              }}
+              transition="all 0.2s ease"
+              backdropFilter="blur(4px)"
+            >
+              <KeyboardArrowLeftRounded />
+            </IconButton>
+            <IconButton
+              aria-label="next photo"
+              position="absolute"
+              right="12px"
+              top="50%"
+              transform="translateY(-50%)"
+              onClick={next}
+              bg="rgba(0, 0, 0, 0.5)"
+              color="white"
+              borderRadius="50%"
+              size="md"
+              _hover={{
+                bg: "rgba(0, 0, 0, 0.7)",
+                transform: "translateY(-50%) scale(1.1)"
+              }}
+              transition="all 0.2s ease"
+              backdropFilter="blur(4px)"
+            >
+              <KeyboardArrowRightRounded />
+            </IconButton>
           </>
         )}
       </Box>

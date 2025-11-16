@@ -35,18 +35,16 @@ export const metadata: Metadata = {
 };
 
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode}) {
   return (
     <html lang="en">
       <body
         className={`${jetbrainsMono.variable} ${jetbrainsMono.variable} antialiased`}
         suppressHydrationWarning={true}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
   );
