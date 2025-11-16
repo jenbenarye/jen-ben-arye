@@ -59,8 +59,8 @@ export default function ProjectsPage() {
       </Link>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"3rem", md:"0rem" }}>
-        <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// projects</Text>
-        <Text mt={2} fontSize={{ base:'1rem', md:'1.1rem' }} color="#6a6a6a" paddingTop={{ base:'0.3rem', md:'0.5rem' }}>
+        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// projects</Text>
+        <Text mt={2} fontSize={{ base:'1rem', md:'1rem' }} color="#6a6a6a" paddingTop={{ base:'0.3rem', md:'0.5rem' }}>
           Things I've built
         </Text>
 

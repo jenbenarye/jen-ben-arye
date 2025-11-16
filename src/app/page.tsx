@@ -16,7 +16,7 @@ export default function Home() {
           {/* Header */}
           <Box maxW="760px">
             <Text
-              fontSize='1rem'
+              fontSize={{ base:'1rem', md:'1rem' }}
               color='#666'
               marginBottom='1rem'
             >
@@ -50,15 +50,15 @@ export default function Home() {
           {/* Navigation */}
           <div>
             <Stack direction="row" flexWrap="wrap" color='#666'>
-              <Link href="/projects" fontSize={{ base:'0.9rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>projects</Link>
-              <Text> / </Text>
-              <Link href="/solo" fontSize={{ base:'0.9rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>solo</Link>
-              <Text> / </Text>
-              <Link href="https://github.com/jenbenarye" fontSize={{ base:'0.9rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>github</Link>
-              <Text> / </Text>
-              <Link href="https://linkedin.com/in/jen-ben-arye" fontSize={{ base:'0.9rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>linkedin</Link>
-              <Text> / </Text>
-              <Link href="mailto:jen_ben@mit.edu" fontSize={{ base:'0.9rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>email</Link>
+              <Link href="/projects" fontSize={{ base:'1rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>projects</Link>
+              <Text fontSize={{ base:'1rem', md:'1rem'}}> / </Text>
+              <Link href="/solo" fontSize={{ base:'1rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>solo</Link>
+              <Text fontSize={{ base:'1rem', md:'1rem'}}> / </Text>
+              <Link href="https://github.com/jenbenarye" fontSize={{ base:'1rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>github</Link>
+              <Text fontSize={{ base:'1rem', md:'1rem'}}> / </Text>
+              <Link href="https://linkedin.com/in/jen-ben-arye" fontSize={{ base:'1rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>linkedin</Link>
+              <Text fontSize={{ base:'1rem', md:'1rem'}}> / </Text>
+              <Link href="mailto:jen_ben@mit.edu" fontSize={{ base:'1rem', md:'1rem'}} color="#666" textDecoration="underline" _hover={{ color: "#000", textDecoration: "underline" }}>email</Link>
             </Stack>
           </div>
         </Stack>
