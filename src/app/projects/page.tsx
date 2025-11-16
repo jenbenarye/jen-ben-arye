@@ -1,6 +1,7 @@
 // jenben/src/app/projects/page.tsx
-import { Box, Flex, Text, VStack, HStack, Tag, Button} from "@chakra-ui/react";
+import { Box, Flex, Text, VStack, HStack, Tag, Button, IconButton} from "@chakra-ui/react";
 import {RiArrowLeftLine} from "react-icons/ri"
+import Link from "next/link";
 
 
 const projects = [
@@ -38,7 +39,24 @@ export default function ProjectsPage() {
       px={{ base: 8, md: 20 }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
+      position="relative"
     >
+      <Link href="/">
+        <IconButton
+          aria-label="back to home"
+          position="fixed"
+          left={{ base: 4, md: 8 }}
+          top={{ base: 4, md: 8 }}
+          variant="ghost"
+          color="#666"
+          _hover={{ color: "#000", bg: "rgba(0,0,0,0.05)" }}
+          size="md"
+          borderRadius="50%"
+          zIndex={10}
+        >
+          <RiArrowLeftLine />
+        </IconButton>
+      </Link>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"3rem", md:"0rem" }}>
         <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// projects</Text>

@@ -3,6 +3,7 @@
 import { Box, Flex, Text, SimpleGrid, IconButton, Button} from "@chakra-ui/react";
 import { KeyboardArrowLeftRounded, KeyboardArrowRightRounded } from "@mui/icons-material";
 import {RiArrowLeftLine} from "react-icons/ri"
+import Link from "next/link";
 
 import Image from "next/image";
 import { useState } from "react";
@@ -251,7 +252,24 @@ export default function SoloPage() {
       px={{ base: 8, md: 20 }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
+      position="relative"
     >
+      <Link href="/">
+        <IconButton
+          aria-label="back to home"
+          position="fixed"
+          left={{ base: 4, md: 8 }}
+          top={{ base: 4, md: 8 }}
+          variant="ghost"
+          color="#666"
+          _hover={{ color: "#000", bg: "rgba(0,0,0,0.05)" }}
+          size="md"
+          borderRadius="50%"
+          zIndex={10}
+        >
+          <RiArrowLeftLine />
+        </IconButton>
+      </Link>
 
       <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
         <Text fontSize={{ base:"1rem", md:"1.1rem" }} color="#7c7c7c">// solo</Text>
