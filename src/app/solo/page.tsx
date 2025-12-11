@@ -1,36 +1,46 @@
 // jenben/src/app/solo/page.tsx
 "use client";
-import { Box, Flex, Text, SimpleGrid, IconButton, Button} from "@chakra-ui/react";
-import { KeyboardArrowLeftRounded, KeyboardArrowRightRounded } from "@mui/icons-material";
-import {RiArrowLeftLine} from "react-icons/ri"
-import Link from "next/link";
+import {
+  Box,
+  Flex,
+  Text,
+  SimpleGrid,
+  IconButton,
+  Button,
+} from "@chakra-ui/react";
+import {
+  KeyboardArrowLeftRounded,
+  KeyboardArrowRightRounded,
+} from "@mui/icons-material";
 
 import Image from "next/image";
 import { useState } from "react";
 
 type Destination = {
-    country: string;
-    year: string;
-    blurb: string;
-    images: string[];
-  };
+  country: string;
+  year: string;
+  blurb: string;
+  images: string[];
+};
 
 const destinations: Destination[] = [
   {
     country: "Argentina",
     year: "2022",
-    blurb: "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
+    blurb:
+      "Landed in Buenos Aires two weeks after Messi's win. First time traveling solo, eight months to go.",
     images: [
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
-        "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg"
-     ],
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700728/IMG_5581_jxcgxv.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700695/IMG_5594_gf39rl.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700694/IMG_5595_bctkki.jpg",
+      "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700692/IMG_5597_tbi5oz.jpg",
+    ],
   },
   {
     country: "Chile",
     year: "2022",
-    blurb: "Hitchhiked the Carretera Austral. Skydived over a live volcano in Pucón. Trekked Torres del Paine.",
+    blurb:
+      "Hitchhiked the Carretera Austral. Skydived over a live volcano in Pucón. Trekked Torres del Paine.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700604/IMG_5600_ezd03b.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700605/IMG_5599_soql7r.jpg",
@@ -63,7 +73,8 @@ const destinations: Destination[] = [
   {
     country: "Bolivia",
     year: "2022",
-    blurb: "White salt flats, a blood-red lake full of pink flamingos, and a volcano behind. A 5,350 m climb. A week in the Amazon Jungle. 36 hr bus rides w/o signal.",
+    blurb:
+      "White salt flats, a blood-red lake full of pink flamingos, and a volcano behind. A 5,350 m climb. A week in the Amazon Jungle. 36 hr bus rides w/o signal.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700506/IMG_5633_kgrztc.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700497/IMG_5647_wndqv0.jpg",
@@ -83,7 +94,8 @@ const destinations: Destination[] = [
   {
     country: "Thailand",
     year: "2025",
-    blurb: "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
+    blurb:
+      "Spent 1.5 months in Thailand. Dived in Koh Tao. Lived with a long neck tribe. Played with monkeys.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5690_rr2eeu.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699961/IMG_5689_kytolu.jpg",
@@ -92,12 +104,13 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699960/IMG_5691_vqtpcg.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5692_sgnodh.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761699959/IMG_5693_km2hf2.jpg",
-        ],
+    ],
   },
   {
     country: "Colombia",
     year: "2022",
-    blurb: "Five-day mission to a remote village. Rappelled 250m into a cave. I was the 38th person ever to go down.",
+    blurb:
+      "Five-day mission to a remote village. Rappelled 250m into a cave. I was the 38th person ever to go down.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700072/IMG_5680_wwu0ua.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700070/IMG_5684_igd5ou.jpg",
@@ -122,7 +135,8 @@ const destinations: Destination[] = [
   {
     country: "Mexico",
     year: "2025",
-    blurb: "1.5 months. Oaxaca - markets, food, colors, smells, chaos. Surfed in Chacahua, slept in a hammock, chickens everywhere.",
+    blurb:
+      "1.5 months. Oaxaca - markets, food, colors, smells, chaos. Surfed in Chacahua, slept in a hammock, chickens everywhere.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706152/4E32B9E6-5B1E-4938-83FE-4E9908190321_tlad54.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706152/35D2FD19-FF93-4A23-BCD9-8257864ACFDA_q5k99t.jpg",
@@ -135,13 +149,13 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/5C59DE6A-4629-493E-8DDF-51296FBC6455_r3jjma.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706147/BE399BB8-C475-452F-8108-A5BD365A5C66_j81pdy.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706151/7C6CF072-299E-40FB-B0DF-6E8DF4EA993C_fe8ude.jpg",
-
     ],
   },
   {
     country: "Galapagos Islands",
     year: "2022",
-    blurb: "Spent a week on a dive boat SCUBA diving with sharks. Five dives per day.",
+    blurb:
+      "Spent a week on a dive boat SCUBA diving with sharks. Five dives per day.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700033/IMG_5675_y6duta.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761700032/IMG_5686_tjvtzk.jpg",
@@ -152,7 +166,8 @@ const destinations: Destination[] = [
   {
     country: "Guatemala",
     year: "2024",
-    blurb: "Hiked up Volcán Acatenango to watch Volcán de Fuego erupt. My camera broke (and so did my heart).",
+    blurb:
+      "Hiked up Volcán Acatenango to watch Volcán de Fuego erupt. My camera broke (and so did my heart).",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705780/0573D390-F5EF-4BD9-94CF-3E00B273D8C5_upnkdk.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761705779/CA0CA14C-12C4-4241-805B-67D96D156D5A_ubzvup.jpg",
@@ -164,7 +179,8 @@ const destinations: Destination[] = [
   {
     country: "Hong Kong",
     year: "2024",
-    blurb: "A detour gone right: from a failed Vietnam plan to noodles and city buzz in Hong Kong.",
+    blurb:
+      "A detour gone right: from a failed Vietnam plan to noodles and city buzz in Hong Kong.",
     images: [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706582/B046A6DE-02D4-4272-9D74-3D1073A2B080_dqgizc.jpg",
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706583/C3F3DC98-2DDC-4447-9F75-E4BCB6751B51_pjbxhz.jpg",
@@ -172,9 +188,7 @@ const destinations: Destination[] = [
       "https://res.cloudinary.com/dv8rcbg2n/image/upload/v1761706583/7447104B-E5AB-4C3B-B1A5-C1263397C426_qzpagn.jpg",
     ],
   },
-
 ];
-
 
 function DestinationCard({ country, year, blurb, images }: Destination) {
   const [index, setIndex] = useState(0);
@@ -184,9 +198,21 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
   const prev = () => setIndex((i) => (i - 1 + total) % total);
 
   return (
-    <Box bg="#fff" borderRadius="1rem" border="0.1rem solid #e5e5e5" overflow="hidden" transition="box-shadow 0.2s" _hover={{ boxShadow: "lg" }}>
-      <Box position="relative" height={{base:"15rem", md:"18rem"}}>
-        <Image src={images[index]} alt={`${country} travel photo ${index + 1}`} fill style={{ objectFit: "cover" }} />
+    <Box
+      bg="#fff"
+      borderRadius="1rem"
+      border="0.1rem solid #e5e5e5"
+      overflow="hidden"
+      transition="box-shadow 0.2s"
+      _hover={{ boxShadow: "lg" }}
+    >
+      <Box position="relative" height={{ base: "15rem", md: "18rem" }}>
+        <Image
+          src={images[index]}
+          alt={`${country} travel photo ${index + 1}`}
+          fill
+          style={{ objectFit: "cover" }}
+        />
         {total > 1 && (
           <>
             <IconButton
@@ -202,7 +228,7 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
               size="md"
               _hover={{
                 bg: "rgba(0, 0, 0, 0.7)",
-                transform: "translateY(-50%) scale(1.1)"
+                transform: "translateY(-50%) scale(1.1)",
               }}
               transition="all 0.2s ease"
               backdropFilter="blur(4px)"
@@ -222,7 +248,7 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
               size="md"
               _hover={{
                 bg: "rgba(0, 0, 0, 0.7)",
-                transform: "translateY(-50%) scale(1.1)"
+                transform: "translateY(-50%) scale(1.1)",
               }}
               transition="all 0.2s ease"
               backdropFilter="blur(4px)"
@@ -234,15 +260,25 @@ function DestinationCard({ country, year, blurb, images }: Destination) {
       </Box>
       <Box p={6}>
         <Flex justify="space-between" align="baseline">
-          <Text fontSize={{base:"1rem", md:"1.2rem"}} color="#2d2d2d">{country}</Text>
-          <Text fontSize={{base:"1rem", md:"1.1rem"}} color="#7c7c7c">{year}</Text>
+          <Text fontSize={{ base: "1rem", md: "1.2rem" }} color="#2d2d2d">
+            {country}
+          </Text>
+          <Text fontSize={{ base: "1rem", md: "1.1rem" }} color="#7c7c7c">
+            {year}
+          </Text>
         </Flex>
-        <Text mt={3} fontSize={{base:"1rem", md:"1rem"}} color="#585858" lineHeight="1.6">{blurb}</Text>
+        <Text
+          mt={3}
+          fontSize={{ base: "1rem", md: "1rem" }}
+          color="#585858"
+          lineHeight="1.6"
+        >
+          {blurb}
+        </Text>
       </Box>
     </Box>
   );
 }
-
 
 export default function SoloPage() {
   return (
@@ -253,38 +289,28 @@ export default function SoloPage() {
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
       position="relative"
+      pt={{ base: "3.5rem", md: "4.5rem" }}
     >
-      <Link href="/">
-        <IconButton
-          aria-label="back to home"
-          position="fixed"
-          left={{ base: 4, md: 8 }}
-          top={{ base: 4, md: 8 }}
-          variant="ghost"
-          color="#666"
-          _hover={{ color: "#000", bg: "rgba(0,0,0,0.05)" }}
-          size="md"
-          borderRadius="50%"
-          zIndex={10}
-        >
-          <RiArrowLeftLine />
-        </IconButton>
-      </Link>
-
-      <Box maxW="820px" margin="0 auto" paddingTop={{ base:"4rem", md:"0rem" }}>
-        <Text fontSize={{ base:"1rem", md:"1rem" }} color="#7c7c7c">// solo</Text>
-        <Text mt={2} fontSize={{ base:'1rem', md:'1rem' }} color="#6a6a6a">
-        I've spent more than a year wandering on my own.
-        It was the sharpest learning curve I've ever taken.
-        I spent time living in India, shared a home with three adopted brothers
-        from Ethiopia and Russia. I split time beneath the surface as a divemaster
-        and behind the lens with my Nikon D7100.
+      <Box
+        maxW="820px"
+        margin="0 auto"
+        paddingTop={{ base: "4rem", md: "0rem" }}
+      >
+        <Text fontSize={{ base: "1rem", md: "1rem" }} color="#7c7c7c">
+          // solo
+        </Text>
+        <Text mt={2} fontSize={{ base: "1rem", md: "1rem" }} color="#6a6a6a">
+          I've spent more than a year wandering on my own. It was the sharpest
+          learning curve I've ever taken. I spent time living in India, shared a
+          home with three adopted brothers from Ethiopia and Russia. I split
+          time beneath the surface as a divemaster and behind the lens with my
+          Nikon D7100.
         </Text>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={20}>
-            {destinations.map((destination) => (
-                <DestinationCard key={destination.country} {...destination} />
-            ))}
+          {destinations.map((destination) => (
+            <DestinationCard key={destination.country} {...destination} />
+          ))}
         </SimpleGrid>
       </Box>
     </Box>

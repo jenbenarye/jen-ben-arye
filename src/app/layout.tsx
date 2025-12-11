@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import Providers from "./providers";
+import NavBar from "./components/NavBar";
 import "./globals.css";
-
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
-  weight: ['300', '400', '500', '600'],
+  weight: ["300", "400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -25,17 +25,21 @@ export const metadata: Metadata = {
     url: "https://www.jenbenarye.com/",
     title: "Jen Ben Arye",
     description: "My corner of the web",
-    siteName: "Jen Ben Arye",  },
+    siteName: "Jen Ben Arye",
+  },
   twitter: {
     card: "summary_large_image",
     title: "Jen Ben Arye",
     description: "My corner of the web",
     images: "/site-icon-1000.png",
-  }
+  },
 };
 
-
-export default function RootLayout({ children }: { children: React.ReactNode}) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body
@@ -43,6 +47,7 @@ export default function RootLayout({ children }: { children: React.ReactNode}) {
         suppressHydrationWarning={true}
       >
         <Providers>
+          <NavBar />
           {children}
         </Providers>
       </body>
