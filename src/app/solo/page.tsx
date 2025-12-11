@@ -289,17 +289,19 @@ export default function SoloPage() {
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
       position="relative"
-      pt={{ base: "3.5rem", md: "4.5rem" }}
     >
       <Box
         maxW="820px"
         margin="0 auto"
-        paddingTop={{ base: "4rem", md: "0rem" }}
+        paddingTop={{ base: "3rem", md: "4rem" }}
       >
-        <Text fontSize={{ base: "1rem", md: "1rem" }} color="#7c7c7c">
-          // solo
-        </Text>
-        <Text mt={2} fontSize={{ base: "1rem", md: "1rem" }} color="#6a6a6a">
+        <Text
+          fontSize={{ base: "1rem", md: "1rem" }}
+          color="#666"
+          lineHeight="1.6"
+          mb={8}
+          paddingBottom={{ base: "1rem", md: "2rem" }}
+        >
           I've spent more than a year wandering on my own. It was the sharpest
           learning curve I've ever taken. I spent time living in India, shared a
           home with three adopted brothers from Ethiopia and Russia. I split
