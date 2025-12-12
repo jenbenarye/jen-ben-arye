@@ -35,6 +35,8 @@ export default function NavBar() {
                 color="#666"
                 fontWeight="normal"
                 _hover={{ color: "#333", textDecoration: "underline" }}
+                _focus={{ outline: "none" }}
+                outline="none"
               >
                 {item.label}
               </Link>
@@ -70,6 +72,8 @@ export default function NavBar() {
                 color={isActive ? "#333" : "#666"}
                 fontWeight={isActive ? "600" : "normal"}
                 _hover={{ color: "#333", textDecoration: "underline" }}
+                _focus={{ outline: "none" }}
+                outline="none"
               >
                 {item.label}
               </Link>
