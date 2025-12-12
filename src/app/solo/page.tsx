@@ -302,11 +302,10 @@ export default function SoloPage() {
           mb={8}
           paddingBottom={{ base: "1rem", md: "2rem" }}
         >
-          I've spent more than a year wandering on my own. It was the sharpest
-          learning curve I've ever taken. I spent time living in India, shared a
-          home with three adopted brothers from Ethiopia and Russia. I split
-          time beneath the surface as a divemaster and behind the lens with my
-          Nikon D7100.
+          I've spent more than a year wandering on my own. I lived in India, and
+          shared a home with three adopted brothers from Ethiopia and Russia. I
+          split time beneath the surface as a divemaster and behind the lens
+          with my Nikon D7100.
         </Text>
 
         <SimpleGrid columns={{ base: 1, md: 2 }} gap={12} mt={20}>
