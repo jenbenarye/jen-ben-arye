@@ -188,7 +188,7 @@ export default function ProjectsPage() {
     <Box
       backgroundColor="#f2f2f2"
       minH="100vh"
-      px={{ base: "2rem", md: "40rem" }}
+      px={{ base: "2rem", md: "30rem" }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
       position="relative"
