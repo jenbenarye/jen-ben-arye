@@ -44,8 +44,8 @@ export default function Home() {
               color="#666"
               lineHeight="1.6"
             >
-              Co-founded Prod Israel. Right now I'm interested in LLMs alignment
-              and agents orchestration. I'm a dive master and a photographer.
+              Co-founded Prod Israel. Interested in LLM alignment and agents
+              orchestration. Divemaster and photographer.
             </Text>
           </div>
 

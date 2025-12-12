@@ -3,6 +3,7 @@ import { JetBrains_Mono } from "next/font/google";
 import Providers from "./providers";
 import NavBar from "./components/NavBar";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-mono",
@@ -49,6 +50,7 @@ export default function RootLayout({
         <Providers>
           <NavBar />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>

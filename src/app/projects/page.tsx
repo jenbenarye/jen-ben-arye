@@ -188,7 +188,7 @@ export default function ProjectsPage() {
     <Box
       backgroundColor="#f2f2f2"
       minH="100vh"
-      px={{ base: 8, md: 20 }}
+      px={{ base: "10rem", md: "40rem" }}
       py={{ base: 16, md: 24 }}
       fontFamily='"JetBrains Mono", monospace'
       position="relative"
@@ -197,6 +197,7 @@ export default function ProjectsPage() {
         maxW="1200px"
         margin="0 auto"
         paddingTop={{ base: "3rem", md: "2rem" }}
+        px={{ base: 4, md: 8 }}
       >
         <VStack align="stretch" gap={0}>
           {projects.map((project) => (
